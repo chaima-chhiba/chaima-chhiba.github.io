@@ -47,7 +47,7 @@ def tl(full):
     return o+"</ol>"
 # HOME
 home=f'''<section class="hero wrap"><div class="hero-t">
-<p class="mono status"><span class="dot"></span>Open to 6-month PFE opportunities - February 2027</p>
+<p class="mono status"><span class="dot"></span>Open for PFE 2027</p>
 <h1>Building infrastructure<br>that works quietly.</h1>
 <p class="sub">Final-year engineering student focused on Cloud, DevOps and Platform Engineering.</p>
 <p class="dim">I build and automate cloud infrastructure, delivery pipelines and security-focused engineering workflows.</p>
@@ -73,7 +73,7 @@ building &amp; learning<span class="cur">_</span></pre></div></section>
 <section class="wrap sec"><h2 class="rv">Selected work</h2><div class="grid2">{"".join(card(p) for p in PROJ)}</div><p class="more"><a href="/projects/">See all projects and write-ups</a></p></section>
 <section class="wrap sec"><h2 class="rv">Experience</h2>{tl(False)}<p class="more"><a href="/experience/">View full experience</a></p></section>
 <section class="wrap sec contact" id="contact"><h2 class="big rv">Let's build something<br>reliable.</h2>{LINKS}</section>'''
-page("/","Chaima Chhiba - Cloud, DevOps & Platform Engineering","Final-year engineering student at TEK-UP focused on Cloud, DevOps, Platform Engineering and DevSecOps. Looking for a 6-month PFE starting February 2027.",home,"/")
+page("/","Chaima Chhiba - Cloud, DevOps & Platform Engineering","Final-year engineering student at TEK-UP focused on Cloud, DevOps, Platform Engineering and DevSecOps. Open for PFE 2027.",home,"/")
 # ABOUT
 tk=[("Cloud & Infrastructure","AWS, Terraform, Linux, Ansible"),("Containers & Platform","Kubernetes, Docker, Nginx, ArgoCD"),("CI/CD & Observability","GitHub Actions, Jenkins, Prometheus, Grafana"),("Security","DevSecOps, AWS Security Hub, CIS AWS Benchmark, OWASP Top 10, Burp Suite, OWASP ZAP"),("Development","Python, Node.js, TypeScript, Java, Vue.js, PostgreSQL, MongoDB")]
 kit="".join(f'<div class="row rv"><h3 class="mono">{a}</h3>{tags(b.split(", "))}</div>' for a,b in tk)
@@ -82,7 +82,7 @@ about=f'''<section class="wrap sec first"><h1 class="rv">Engineer by training,<b
 <div class="two"><h2 class="rv">About me</h2><div class="prose rv">
 <p>I'm a final-year engineering student at TEK-UP University, working on cloud infrastructure, DevOps, Platform Engineering and DevSecOps. I like systems that are automated, reproducible and boring to operate.</p>
 <p>My day-to-day tools are AWS, Linux, Kubernetes, Terraform and CI/CD pipelines. I've worked at Ooredoo Tunisia, Fresenius Kabi, EdTrust and Safran, shipping everything from a vulnerability intelligence platform to Dockerized deployments behind Nginx.</p>
-<p>I'm looking for a 6-month PFE starting February 2027.</p>{LINKS}</div></div></section>
+<p>I'm open for a PFE in 2027.</p>{LINKS}</div></div></section>
 <section class="wrap sec"><div class="two"><h2 class="rv">Technical toolkit</h2><div>{kit}</div></div></section>
 <section class="wrap sec"><div class="two"><h2 class="rv">Education</h2><div>
 <div class="row rv"><h3>TEK-UP University</h3><p>Engineering Degree - Network Security &amp; Cybersecurity</p><p class="mono dim">2024 - September 2027</p><p class="dim">Ranked 5th/30</p></div>
@@ -102,4 +102,4 @@ open("404.html","w").write(open("index.html").read().replace("<title>Chaima Chhi
 nf=f'<section class="wrap sec first"><p class="mono dim">404</p><h1>Page not found.</h1><p class="dim">That path doesn\'t exist. Try the <a href="/">home page</a> or <a href="/projects/">projects</a>.</p></section>'
 page("/","Page not found - Chaima Chhiba","Page not found.",nf,"")
 os.replace("index.html","404.html")
-page("/","Chaima Chhiba - Cloud, DevOps & Platform Engineering","Final-year engineering student at TEK-UP focused on Cloud, DevOps, Platform Engineering and DevSecOps. Looking for a 6-month PFE starting February 2027.",home,"/")
+page("/","Chaima Chhiba - Cloud, DevOps & Platform Engineering","Final-year engineering student at TEK-UP focused on Cloud, DevOps, Platform Engineering and DevSecOps. Open for PFE 2027.",home,"/")
