@@ -47,7 +47,6 @@ def tl(full):
     return o+"</ol>"
 # HOME
 home=f'''<section class="hero wrap"><div class="hero-t">
-<p class="mono status"><span class="dot"></span>Open for PFE 2027</p>
 <h1>Building infrastructure<br>that works quietly.</h1>
 <p class="sub">Final-year engineering student focused on Cloud, DevOps and Platform Engineering.</p>
 <p class="dim">I build and automate cloud infrastructure, delivery pipelines and security-focused engineering workflows.</p>
