@@ -2,6 +2,13 @@
   var d = document;
   var b = d.querySelector('.burger');
   var n = d.querySelector('.nav nav');
+  var portrait = d.querySelector('.portrait img');
+
+  if (portrait) {
+    portrait.addEventListener('error', function () {
+      portrait.hidden = true;
+    });
+  }
 
   if (!b || !n) return;
 
